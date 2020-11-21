@@ -4,6 +4,14 @@
   font-family: "Matter";
   src: url("../fonts/matter/Matter-Regular.woff");
 }
+@font-face {
+  font-family: "MatterLight";
+  src: url("../fonts/matter/Matter-Light.woff");
+}
+@font-face {
+  font-family: "MatterMedium";
+  src: url("../fonts/matter/Matter-Medium.woff");
+}
 
 :root {
   --blue: #1e90ff;
@@ -38,6 +46,12 @@ h4 {
   margin-top: 0;
 }
 
+.my-full-page .col-lg-6 {
+  padding: 0;
+}
+.my-full-page .row {
+  margin: 0;
+}
 .canvasing {
     position:fixed;
     z-index:99999;
@@ -72,11 +86,11 @@ h4 {
 }
 
 .btn-width-fixed {
-  width: 250px;
+  width: 280px;
 }
 
 .the-container {
-  padding: 0 5%;
+  padding: 0;
   width: 100%;
 }
 
@@ -88,27 +102,56 @@ h4 {
   padding: 0 5%;
 }
 
-.center-me-top-white,
-.center-me-top-black {
-  position: absolute;
-  width: 2px;
-  height: 100%;
-  top: 0;
-  left: 50%;
-  background-color: #fff;
-  z-index: 999;
+.my-hero-videos video{
+  top:0;
+position: absolute;
+z-index:1;
+background-color: #000;
+height:100%;
 }
 
-.center-me-top-white-start {
-  top: 8px;
-}
 
-.center-me-top-black {
-  background-color: #000;
-}
+@media screen and (min-width:1200px) {
+  .center-me-top-white,
+  .center-me-top-black {
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    background-color: #fff;
+    z-index: 999;
+  }
 
-.top-arrow-line {
-  position: relative;
+  .center-me-top-white-start {
+    top: 8px;
+  }
+
+  .center-me-top-black {
+    background-color: #000;
+  }
+
+  .top-arrow-line {
+    position: relative;
+  }
+  .top-arrow-line::before,
+  .top-arrow-line::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    height: 3px;
+    width: 30px;
+    background-color: #fff;
+    transform: rotate(45deg);
+    z-index: 999;
+    left: 50%;
+    margin-left: -4px;
+  }
+
+  .top-arrow-line::after {
+    transform: rotate(-45deg);
+    margin-left: -24px;
+  }
 }
 
 #myBar::before,
@@ -130,24 +173,7 @@ h4 {
   margin-left: -24px;
 }
 
-.top-arrow-line::before,
-.top-arrow-line::after {
-  content: "";
-  position: absolute;
-  top: 15px;
-  height: 3px;
-  width: 30px;
-  background-color: #fff;
-  transform: rotate(45deg);
-  z-index: 999;
-  left: 50%;
-  margin-left: -4px;
-}
 
-.top-arrow-line::after {
-  transform: rotate(-45deg);
-  margin-left: -24px;
-}
 
 
 /*Base and fixed size for all small devices */
@@ -748,6 +774,14 @@ h4 {
   justify-content: space-between;
   height: 100%;
 }
+.sections-flex-between {
+    display: flex;
+  flex-direction: column;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  justify-content: space-between;
+  height: 100%;
+}
 
 .sectionthree {
   height: 100%;
@@ -761,6 +795,7 @@ h4 {
   flex-direction: column;
   justify-content: flex-end;
 }
+
 
 .section-three-bottom {}
 
@@ -776,13 +811,52 @@ h4 {
 }
 
 h5.ftco-counter {
-  font-size: calc(1em + 3.2vw);
+  font-size: calc(2.9em + 3.2vw);
   font-weight: 300;
   font-stretch: normal;
   font-style: normal;
   line-height: 0.8;
   letter-spacing: -2.7px;
+  border-bottom: solid 1px #000000;
+  padding-bottom: 25px;
+  font-family: "MatterLight";
+  margin-top: 84px;
 }
+
+.ftco-counters .ftco-counter-label {
+  font-family: "MatterMedium";
+
+}
+/*  end Ftc counters*/
+
+
+/* Flickty Slider text */
+.product-carousel .carousel-cell {
+    width: 50%;
+    margin-right: 20px;
+    border-radius: 5px;
+    counter-increment: gallery-cell;
+    background-color: rgb(204 210 210 / 47%);
+    padding: 5%;
+}
+.product-carousel .carousel-cell hr {
+  margin-bottom: 2rem;
+}
+.product-carousel .carousel-cell h3 {
+  font-family: "MatterMedium";
+}
+
+.product-carousel .carousel-cell .numbering-cart {
+font-size: calc(0.6em + 3.2vw);
+ padding-bottom: 25px;
+ display:block;
+font-family: "MatterLight";
+
+}
+.flickity-page-dots {
+  text-align: right;
+}
+/* Flickty Slider text end */
 
 .sectionfour {
   position: relative;
@@ -805,10 +879,11 @@ h5.ftco-counter {
   padding-left: 5px;
 }
 
+
 .default-section-container {
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-top: 70px;
+  padding-left: 10%;
+  padding-right: 10%;
+  /*padding-top: 70px;*/
 }
 
 .section6 {
@@ -829,6 +904,7 @@ h5.ftco-counter {
 
 .section6-list {
   list-style: none;
+  padding-left:0 ;
 }
 
 .section6-list li {
@@ -898,4 +974,17 @@ h5.ftco-counter {
 
 .footer-right {
   float: right;
+}
+
+.footer-padding-contact {
+  margin-top: 10%;
+}
+
+ .diagram-padding {
+  padding: 10% 10%;
+ }
+@media screen and (min-width: 1200px) {
+  .diagram-padding {
+    padding: 30% 10%;
+  }
 }

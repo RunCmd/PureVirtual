@@ -1,7 +1,19 @@
-;(function () {
+(function () {
 	
 	'use strict';
 
+	var defaultFunctions = function (){
+
+		$(document).ready(function(){
+		  	$('.product-carousel').flickity({
+              // options
+              cellAlign: 'left',
+              contain: true,
+              freescroll: true,
+              prevNextButtons: false
+            });
+		});
+}
 	var isMobile = {
 		Android: function() {
 			return navigator.userAgent.match(/Android/i);
@@ -274,6 +286,7 @@
 	  	$('#ftco-hero .flexslider').flexslider({
 			animation: "fade",
 			slideshowSpeed: 5000,
+			video: true,
 			directionNav: false,
 			controlNav: false,
 			start: function(){
@@ -287,6 +300,9 @@
 			},
 			before: function(){
 //debugger;
+  					$('video').each(function() { 
+                        $(this).get(0).load(); 
+                    });
 
 			    	if(count === 3){
 			    		count = 0;
@@ -299,7 +315,36 @@
 					$('.slider-text').removeClass('animated fadeInUp');
 					$('.flex-active-slide').find('.slider-text').addClass('animated fadeInUp');
 				}, 500);
-			}
+			},
+			  after: function(){
+		        // sets active_id to the active slide
+		        var active_id = $('.flex-active-slide').attr('id');
+		        
+		       //$('video').trigger('pause');
+		       
+		       //if the active slide is the video slide...  
+		        if( active_id == "slide1"){
+		            //play the video and pause the slider
+		              myVideo1.play();
+		              $('.flexslider').flexslider("pause");
+		              //when the video has ended, go to the next slide and play the slider
+		              myVideo1.onended = function(){
+		                $('.flexslider').flexslider("next");
+		                $('.flexslider').flexslider("play");
+		              }
+		        }
+		        if( active_id == "slide2"){
+		            //play the video and pause the slider
+		              myVideo2.play();
+		              $('.flexslider').flexslider("pause");
+		              //when the video has ended, go to the next slide and play the slider
+		              myVideo2.onended = function(){
+		                $('.flexslider').flexslider("next");
+		                $('.flexslider').flexslider("play");
+		              }
+		        }
+		        
+		    },
 
 	  	});
 
@@ -336,6 +381,7 @@
 		counter();
 		testimonialCarousel();
 		fullHeight();
+		defaultFunctions();
 	});
 
 
