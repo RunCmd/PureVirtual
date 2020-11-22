@@ -105,13 +105,51 @@ h4 {
   bottom:-15px;
 }
 
+
+
+
 .btn-white-more {
   background-color: #ffffff;
-  padding: 23px 54px;
+  padding: 20px 50px;
   color: #000;
   border-radius: 60px;
   font-size: 20px;
 }
+
+.btn{
+   transition: all 0.3s;
+   display: inline-block;
+   position: relative;
+   min-width: 200px;
+}
+
+.btn:after {
+  content: '→';
+  position: absolute;
+  opacity: 0;
+  right: -20px;
+  transition: 0.3s;
+  color:#fff;
+
+}
+
+.btn:hover{
+  padding-left:15px;
+  background-color: #182B39;
+  transition: all 0.3s;
+  color:#fff;
+}
+
+.btn:hover:after {
+  opacity: 1;
+  right: 30px;
+}
+
+
+
+
+
+
 
 
 .the-container {
@@ -165,37 +203,37 @@ height:100%;
     position: absolute;
     top: 15px;
     height: 3px;
-    width: 30px;
+    width: 20px;
     background-color: #fff;
     transform: rotate(45deg);
     z-index: 999;
     left: 50%;
-    margin-left: -4px;
+    margin-left: -2px;
   }
 
   .top-arrow-line::after {
     transform: rotate(-45deg);
-    margin-left: -24px;
+    margin-left: -16px;
   }
 }
 
 #myBar::before,
 #myBar::after {
-   content: "";
+  content: "";
   position: absolute;
-  top: 0px;
+  top: 15px;
   height: 3px;
-  width: 30px;
+  width: 20px;
   background-color: #fff;
   transform: rotate(45deg);
   z-index: 999;
   left: 50%;
-  margin-left: -4px;
+  margin-left: -2px;
 }
 
 #myBar::after {
   transform: rotate(-45deg);
-  margin-left: -24px;
+  margin-left: -16px;
 }
 
 
@@ -784,10 +822,10 @@ h4 {
 }
 
 .section2-flex-between {
-  min-height: 90vh;
+  min-height: 80vh;
   display: flex;
   flex-direction: column;
-  padding: 75px 0px;
+  padding: 5% 0px;
   justify-content: space-between;
 }
 
@@ -908,9 +946,8 @@ font-weight: 100;
 
 
 .default-section-container {
-  padding-left: 10%;
-  padding-right: 10%;
-  /*padding-top: 70px;*/
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .section6 {

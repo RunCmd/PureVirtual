@@ -1,15 +1,24 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.4 129">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 142 142">
   <defs>
     <style>
       .a {
-        fill: none;
-        stroke: #182b39;
-        stroke-miterlimit: 10;
-        stroke-width: 5.67px;
+        fill: #d3d9d9;
+      }
+
+      .b {
+        fill: #182b39;
+      }
+
+      .c {
+        fill: #fff;
       }
     </style>
   </defs>
   <title>pv-fav</title>
-  <line class="a" x1="15.2" y1="129" x2="15.2" y2="4"/>
-  <polyline class="a" points="2 17.2 15.2 4 28.3 17.2"/>
+  <rect class="a" width="142" height="142.04"/>
+  <rect class="a" x="0.2" width="141.7" height="141.73"/>
+  <rect class="b" x="0.2" y="70.9" width="141.7" height="70.87"/>
+  <rect class="c" x="66.8" y="71" width="8.5" height="64.76"/>
+  <rect class="b" x="66.8" y="10.8" width="8.5" height="60.12"/>
+  <polygon class="b" points="48.7 39 42.7 33 71 4.7 99.3 33 93.3 39 71 16.8 48.7 39"/>
 </svg>
