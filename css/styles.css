@@ -736,9 +736,9 @@ h4 {
 }
 
 @media screen and (max-width: 992px) {
-  #ftco-offcanvas {
+  /* #ftco-offcanvas {
     display: block;
-  }
+  } */
 }
 
 .offcanvas #ftco-offcanvas {
