@@ -74,12 +74,12 @@
 	    var container = $("#ftco-offcanvas, .js-ftco-nav-toggle");
 	    if (!container.is(e.target) && container.has(e.target).length === 0) {
 
-	    	if ( $('body').hasClass('offcanvas') ) {
-
-    			$('body').removeClass('offcanvas');
-    			$('.js-ftco-nav-toggle').removeClass('active');
-
-	    	}
+	    	// if ( $('body').hasClass('offcanvas') ) {
+				//
+    		// 	$('body').removeClass('offcanvas');
+    		// 	$('.js-ftco-nav-toggle').removeClass('active');
+				//
+	    	// }
 
 
 	    }
