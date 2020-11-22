@@ -511,15 +511,18 @@ h1 {
 
 
     header.video-on {
-    height: calc(100vh - 100px);
+    /* height: calc(100vh - 100px); */
+    height: 800px;
     }
 
     header.video-on video {
-    height: calc(100vh - 100px);
+    /* height: calc(100vh - 100px); */
+        height: 800px;
     }
 
     header.video-on .overlay {{
-      height: calc(100vh - 100px);
+      /* height: calc(100vh - 100px); */
+          height: 800px;
     }
 }
 
