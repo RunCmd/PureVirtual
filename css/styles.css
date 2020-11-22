@@ -43,7 +43,6 @@
 
 
 :root {
-  --blue: #1e90ff;
   --white: #ffffff;
   --black: #000000;
   --gray: #eaeaea;
@@ -166,7 +165,7 @@ header.video-on .overlay {
 
 @media (pointer: coarse) and (hover: none) {
   header.video-on {
-    background: url('./images/hero_1.jpg') black no-repeat center center scroll;
+    background: url('.../images/hero_1.jpg') no-repeat center center scroll;
   }
   header.video-on video {
     display: none;
@@ -1183,6 +1182,15 @@ h4 {
   margin-bottom: 40px;
 }
 
+.line-before-footer {
+  border-left: 5px solid #182B39;
+  padding-left: 5px;
+  font-size: 20px;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+
+
 .section2 {
   position: relative;
 }
@@ -1419,7 +1427,7 @@ font-weight: 100;
 .social-media {
   list-style: none;
   padding-left: 0px;
-  padding-top: 20px;
+  font-weight: 200;
 }
 
 .social-media li a {
@@ -1427,7 +1435,7 @@ font-weight: 100;
 }
 
 .li-bold {
-  font-weight: bold;
+  font-weight: 400;
 }
 
 .section8-footer {
@@ -1449,6 +1457,7 @@ font-weight: 100;
  .diagram-padding {
   padding: 10% 10%;
  }
+
 @media screen and (min-width: 1200px) {
   .diagram-padding {
     padding: 30% 10%;
@@ -1458,17 +1467,53 @@ font-weight: 100;
   .section2-flex-between{
     min-height: auto;
   }
-  .default-section-container a{
-    margin-top:40px;
+  .section2-heading{
+    padding-bottom:30%;
   }
   .section2 .p-bottom{
     max-width: 100%;
   }
   .sectionfour-heading{
-    padding-bottom:10px;
+    padding-bottom:30%;
   }
   .text-bottom{
     max-width: 100%;
     margin-top:30%;
   }
+  .section3-heading{
+    padding-bottom:30%;
+  }
+  .section7-text{
+    margin-top: 30%;
+margin-bottom: 30%;
+  }
+  .section-heading{
+    padding-bottom:30%;
+  }
+  .flickity-enabled.is-draggable{
+    margin-bottom:10%;
+  }
+  .footer-padding-contact{
+    margin-top:0;
+  }
+  .line-before-footer{
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
 }
+
+a:hover{
+  color: #95A5A5 !important;
+  transition: 0.3s all ease-in-out;
+  text-decoration: none;
+}
+
+a:after {
+  display:block;
+  content: '';
+  border-bottom: solid 2px #95A5A5;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+  width: inherit;
+}
+a:hover:after { transform: scaleX(1); }
