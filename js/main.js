@@ -1,5 +1,5 @@
 (function () {
-	
+
 	'use strict';
 
 	var defaultFunctions = function (){
@@ -45,10 +45,10 @@
 
     			$('body').removeClass('offcanvas');
     			$('.js-ftco-nav-toggle').removeClass('active');
-				
+
 	    	}
-	    
-	    	
+
+
 	    }
 		});
 
@@ -76,14 +76,14 @@
 			$this
 				.addClass('active')
 				.find('ul')
-				.slideDown(500, 'easeOutExpo');				
+				.slideDown(500, 'easeOutExpo');
 		}).mouseleave(function(){
 
 			var $this = $(this);
 			$this
 				.removeClass('active')
 				.find('ul')
-				.slideUp(500, 'easeOutExpo');				
+				.slideUp(500, 'easeOutExpo');
 		});
 
 
@@ -93,7 +93,7 @@
 
     			$('body').removeClass('offcanvas');
     			$('.js-ftco-nav-toggle').removeClass('active');
-				
+
 	    	}
 		});
 	};
@@ -134,7 +134,7 @@
 		$('.animate-box').waypoint( function( direction ) {
 
 			if( direction === 'down' && !$(this.element).hasClass('animated-fast') ) {
-				
+
 				i++;
 
 				$(this.element).addClass('item-animate');
@@ -157,9 +157,9 @@
 							el.removeClass('item-animate');
 						},  k * 200, 'easeInOutExpo' );
 					});
-					
+
 				}, 100);
-				
+
 			}
 
 		} , { offset: '85%' } );
@@ -191,13 +191,13 @@
 	var goToTop = function() {
 
 		$('.js-gotop').on('click', function(event){
-			
+
 			event.preventDefault();
 
 			$('html, body').animate({
 				scrollTop: $('html').offset().top
 			}, 500, 'easeInOutExpo');
-			
+
 			return false;
 		});
 
@@ -211,7 +211,7 @@
 			}
 
 		});
-	
+
 	};
 
 
@@ -239,10 +239,13 @@
 
         move();
          setTimeout(function(){
-          $(".canvasing").fadeOut('slow');
+          					document.getElementById("canvasing-left").style.transform = "translateX(-101%)";
+										document.getElementById("canvasing-right").style.transform = "translateX(100%)";
          }, 1000);
-	
-		$(".ftco-loader").fadeOut("slow");
+
+				 setTimeout(function(){
+					 document.getElementById("scroll-down").style.display = "none";
+				 }, 1000);
 	};
 
 	var counter = function() {
@@ -256,9 +259,9 @@
 	var counterWayPoint = function() {
 		if ($('#ftco-counter').length > 0 ) {
 			$('#ftco-counter').waypoint( function( direction ) {
-										
+
 				if( direction === 'down' && !$(this.element).hasClass('animated') ) {
-					setTimeout( counter , 400);					
+					setTimeout( counter , 400);
 					$(this.element).addClass('animated');
 				}
 			} , { offset: '90%' } );
@@ -267,7 +270,7 @@
 
 
 	var testimonialCarousel = function(){
-		
+
 		var owl = $('.owl-carousel-fullwidth');
 		owl.owlCarousel({
 			items: 1,
@@ -282,7 +285,7 @@
 
 	var sliderMain = function() {
 		var count = 0;
-		
+
 	  	$('#ftco-hero .flexslider').flexslider({
 			animation: "fade",
 			slideshowSpeed: 5000,
@@ -290,9 +293,9 @@
 			directionNav: false,
 			controlNav: false,
 			start: function(){
-			
+
 				setTimeout(function(){
-					
+
 					$('.slider-text').removeClass('animated fadeInUp');
 					$('.flex-active-slide').find('.slider-text').addClass('animated fadeInUp');
 				}, 500);
@@ -300,8 +303,8 @@
 			},
 			before: function(){
 //debugger;
-  					$('video').each(function() { 
-                        $(this).get(0).load(); 
+  					$('video').each(function() {
+                        $(this).get(0).load();
                     });
 
 			    	if(count === 3){
@@ -319,10 +322,10 @@
 			  after: function(){
 		        // sets active_id to the active slide
 		        var active_id = $('.flex-active-slide').attr('id');
-		        
+
 		       //$('video').trigger('pause');
-		       
-		       //if the active slide is the video slide...  
+
+		       //if the active slide is the video slide...
 		        if( active_id == "slide1"){
 		            //play the video and pause the slider
 		              myVideo1.play();
@@ -343,31 +346,31 @@
 		                $('.flexslider').flexslider("play");
 		              }
 		        }
-		        
+
 		    },
 
 	  	});
 
-	  	$('#ftco-hero .flexslider .slides > li').css('height', $(window).height());	
+	  	$('#ftco-hero .flexslider .slides > li').css('height', $(window).height());
 	  	$(window).resize(function(){
-	  		$('#ftco-hero .flexslider .slides > li').css('height', $(window).height());	
+	  		$('#ftco-hero .flexslider .slides > li').css('height', $(window).height());
 	  	});
 
 
     function run() {
-    	
+
         jQuery('.progress_bar').animate({'width': "300px"}, 5000, run).width(0);
     }
     run();
-    
-    
+
+
     jQuery('.flexslider').mouseout(function() {
         jQuery('.progress_bar').animate({'width': "300px"}, 5000, run).width(0);
     });
 
 	};
 
-	
+
 	$(function(){
 		mobileMenuOutsideClick();
 		offcanvasMenu();
