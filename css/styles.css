@@ -1,17 +1,45 @@
-/* font Face*/
+/* font Face 100-Light, 200-Regular, 300-Medium */
 
-@font-face {
+ /* 100 - Light */
+@font-face{
   font-family: "Matter";
-  src: url("../fonts/matter/Matter-Regular.woff");
+  src:url("../fonts/matter/Matter-Light.eot");
+  src:url("../fonts/matter/Matter-Light.eot?#iefix") format('embedded-opentype'),
+      url("../fonts/matter/Matter-Light.woff2") format('woff2'),
+      url("../fonts/matter/Matter-Light.woff") format('woff'),
+      url("../fonts/matter/Matter-Light.ttf") format('truetype'), /* Safari, Android, iOS */
+      url("../fonts/matter/Matter-Light.svg#Matter") format('svg');  /* Legacy iOS */
+  font-weight:100;
+  font-style:normal;
 }
-@font-face {
-  font-family: "MatterLight";
-  src: url("../fonts/matter/Matter-Light.woff");
+
+
+/* 200 - Regular */
+@font-face{
+ font-family: "Matter";
+ src:url("../fonts/matter/Matter-Regular.eot");
+ src:url("../fonts/matter/Matter-Regular.eot?#iefix") format('embedded-opentype'),
+     url("../fonts/matter/Matter-Regular.woff2") format('woff2'),
+     url("../fonts/matter/Matter-Regular.woff") format('woff'),
+     url("../fonts/matter/Matter-Regular.ttf") format('truetype'), /* Safari, Android, iOS */
+     url("../fonts/matter/Matter-Regular.svg#Matter") format('svg');  /* Legacy iOS */
+ font-weight:200;
+ font-style:normal;
 }
-@font-face {
-  font-family: "MatterMedium";
-  src: url("../fonts/matter/Matter-Medium.woff");
+
+/* 300 - Medium */
+@font-face{
+ font-family: "Matter";
+ src:url("../fonts/matter/Matter-Medium.eot");
+ src:url("../fonts/matter/Matter-Medium.eot?#iefix") format('embedded-opentype'),
+     url("../fonts/matter/Matter-Medium.woff2") format('woff2'),
+     url("../fonts/matter/Matter-Medium.woff") format('woff'),
+     url("../fonts/matter/Matter-Medium.ttf") format('truetype'), /* Safari, Android, iOS */
+     url("../fonts/matter/Matter-Medium.svg#Matter") format('svg');  /* Legacy iOS */
+ font-weight:300;
+ font-style:normal;
 }
+
 
 :root {
   --blue: #1e90ff;
@@ -24,7 +52,7 @@
 }
 
 body {
-  font-family: "Matter";
+  font-family: "Matter", sans-serif;
   background-color: var(--gray);
   font-size: 18px;
   letter-spacing: 0;
@@ -44,6 +72,7 @@ h2,
 h3,
 h4 {
   margin-top: 0;
+  font-weight: 200;
 }
 
 .my-full-page .col-lg-6 {
@@ -82,12 +111,8 @@ h4 {
   color: #000;
   border-radius: 60px;
   font-size: 20px;
-  display: block;
 }
 
-.btn-width-fixed {
-  width: 280px;
-}
 
 .the-container {
   padding: 0;
@@ -686,7 +711,7 @@ h4 {
 
 #ftco-hero .flexslider .slider-text>.slider-text-inner h1 {
   margin-bottom: 20px;
-  font-weight: 700;
+  font-weight: 200;
 }
 
 @media screen and (max-width: 768px) {
@@ -701,7 +726,6 @@ h4 {
 #ftco-hero .flexslider .slider-text>.slider-text-inner .heading-section {}
 
 #ftco-hero .flexslider .slider-text>.slider-text-inner .btn {
-  padding: 25px 40px !important;
   background: #fff !important;
   color: #000;
   border: none !important;
@@ -812,19 +836,20 @@ h4 {
 
 h5.ftco-counter {
   font-size: calc(2.9em + 3.2vw);
-  font-weight: 300;
+  font-weight: 100;
   font-stretch: normal;
   font-style: normal;
   line-height: 0.8;
   letter-spacing: -2.7px;
   border-bottom: solid 1px #000000;
   padding-bottom: 25px;
-  font-family: "MatterLight";
+  font-family: "Matter", sans-serif;
   margin-top: 84px;
 }
 
 .ftco-counters .ftco-counter-label {
-  font-family: "MatterMedium";
+  font-family: "Matter";
+  font-weight: 300;
 
 }
 /*  end Ftc counters*/
@@ -843,14 +868,16 @@ h5.ftco-counter {
   margin-bottom: 2rem;
 }
 .product-carousel .carousel-cell h3 {
-  font-family: "MatterMedium";
+  font-family: "Matter", sans-serif;
+  font-weight: 300;
 }
 
 .product-carousel .carousel-cell .numbering-cart {
 font-size: calc(0.6em + 3.2vw);
  padding-bottom: 25px;
  display:block;
-font-family: "MatterLight";
+font-family: "Matter", sans-serif;
+font-weight: 100;
 
 }
 .flickity-page-dots {
