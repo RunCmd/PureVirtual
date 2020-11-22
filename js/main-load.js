@@ -1,4 +1,4 @@
-jQuery(document).ready(function(event){
+$(document).ready(function(event){
   var isAnimating = false,
     newLocation = '';
     firstLoad = false;
