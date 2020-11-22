@@ -508,6 +508,19 @@ h1 {
   h1 {
     font-size: 46px;
   }
+
+
+    header.video-on {
+    height: calc(100vh - 100px);
+    }
+
+    header.video-on video {
+    height: calc(100vh - 100px);
+    }
+
+    header.video-on .overlay {{
+      height: calc(100vh - 100px);
+    }
 }
 
 
