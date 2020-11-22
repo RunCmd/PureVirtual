@@ -3,7 +3,11 @@
 	'use strict';
 
 	var defaultFunctions = function (){
-
+		var count = 0;
+		  function run() {
+	    	
+	        jQuery('.progress_bar').animate({'width': "300px"}, 10000, run).width(0);
+	    }
 		$(document).ready(function(){
 		  	$('.product-carousel').flickity({
               // options
@@ -13,6 +17,35 @@
               prevNextButtons: false
             });
 		});
+
+		//Swipe and Carousel 
+		$(".carousel").swipe({
+
+        swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
+
+          if (direction == 'left') $(this).carousel('next');
+          if (direction == 'right') $(this).carousel('prev');
+
+        },
+        allowPageScroll:"vertical"
+
+      });
+		$('.carousel').carousel({
+		  interval: 5000
+		})
+	    run();
+
+	$('.carousel').on('slide.bs.carousel', function () {
+	  // do something...
+	  if(count === 3){
+		count = 0;
+		}else {
+	    	count ++;
+		}
+
+	 $('.progress_bar-count').text(count);
+	  run();
+	})
 }
 	var isMobile = {
 		Android: function() {
@@ -218,26 +251,26 @@
 	// Loading page
 	var loaderPage = function() {
 
-		 var i = 0;
-        function move() {
-          if (i == 0) {
-            i = 1;
-            var elem = document.getElementById("myBar");
-            var height = 1;
-            var id = setInterval(frame, 10);
-            function frame() {
-              if (height >= 100) {
-                clearInterval(id);
-                i = 0;
-              } else {
-                height++;
-                elem.style.height = height + "%";
-              }
-            }
-          }
-        }
+		 // var i = 0;
+   //      function move() {
+   //        if (i == 0) {
+   //          i = 1;
+   //          var elem = document.getElementById("myBar");
+   //          var height = 1;
+   //          var id = setInterval(frame, 10);
+   //          function frame() {
+   //            if (height >= 100) {
+   //              clearInterval(id);
+   //              i = 0;
+   //            } else {
+   //              height++;
+   //              elem.style.height = height + "%";
+   //            }
+   //          }
+   //        }
+   //      }
 
-        move();
+//        move();
          setTimeout(function(){
           					document.getElementById("canvasing-left").style.transform = "translateX(-101%)";
 										document.getElementById("canvasing-right").style.transform = "translateX(100%)";
@@ -245,6 +278,7 @@
 
 				 setTimeout(function(){
 					 document.getElementById("scroll-down").style.display = "none";
+					 $(".canvasing").hide();
 				 }, 1000);
 	};
 
@@ -284,7 +318,6 @@
 	};
 
 	var sliderMain = function() {
-		var count = 0;
 
 	  	$('#ftco-hero .flexslider').flexslider({
 			animation: "fade",
@@ -303,17 +336,7 @@
 			},
 			before: function(){
 //debugger;
-  					$('video').each(function() {
-                        $(this).get(0).load();
-                    });
 
-			    	if(count === 3){
-			    		count = 0;
-			    	}else {
-			        	count ++;
-			    	}
-
-       				 jQuery('.progress_bar-count').text(count);
 				setTimeout(function(){
 					$('.slider-text').removeClass('animated fadeInUp');
 					$('.flex-active-slide').find('.slider-text').addClass('animated fadeInUp');
@@ -355,13 +378,6 @@
 	  	$(window).resize(function(){
 	  		$('#ftco-hero .flexslider .slides > li').css('height', $(window).height());
 	  	});
-
-
-    function run() {
-
-        jQuery('.progress_bar').animate({'width': "300px"}, 5000, run).width(0);
-    }
-    run();
 
 
     jQuery('.flexslider').mouseout(function() {

@@ -332,12 +332,6 @@ z-index: 999999999999;
 }
 
 
-
-
-
-
-
-
 .the-container {
   padding: 0;
   width: 100%;
@@ -352,11 +346,9 @@ z-index: 999999999999;
 }
 
 .my-hero-videos video{
-  top:0;
-position: absolute;
-z-index:1;
 background-color: #000;
 height:100%;
+width: 100%;
 }
 
 
@@ -557,12 +549,12 @@ h4 {
 }
 
 .progress_bar_container {
-  padding: 0 5%;
+  padding: 0 2%;
   height: 4px;
   width: 100%;
   position: relative;
   top: 0em;
-  z-index: 9999;
+  z-index: 999;
   bottom: 50px;
 }
 
@@ -573,6 +565,69 @@ h4 {
   position: relative;
   z-index: 9999;
   bottom: 50px;
+}
+
+/*slider start*/
+.yutso-item  {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height:100vh;
+}
+.carouselPurevirtual-slide .carousel-caption {
+  left:0;
+  top:0;
+}
+.slider-text {
+
+  display: table;
+  opacity: 1;
+  min-height: 90vh;
+  z-index: 9;
+  text-align:left;
+}
+
+.slider-text>.slider-text-inner {
+  display: table-cell;
+  vertical-align: middle;
+  min-height: 90vh;
+
+}
+
+.slider-text>.slider-text-inner h1,
+.slider-text>.slider-text-inner h2 {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+.slider-text>.slider-text-inner h1 {
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+
+.slider-text>.slider-text-inner h2 {
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.slider-text>.slider-text-inner .heading-section {}
+
+.slider-text>.slider-text-inner .btn {
+  padding: 25px 40px !important;
+  background: #fff !important;
+  color: #000;
+  border: none !important;
+  margin-top: 30px;
+}
+
+.slider-text>.slider-text-inner .btn:hover {
+  background: #182B39 !important;
+  color: #fff;
+  -webkit-box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important;
+  -moz-box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important;
+  box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important;
 }
 
 .flexslider {
@@ -692,8 +747,42 @@ h4 {
 }
 
 .ftco-nav .top-menu {
-  padding: 28px 0;
+ padding: 10px 0;
 }
+.ftco-nav .top-menu .padding-navi {
+  padding:0 1%;
+}
+.ftco-nav .top-menu .navbar-light .navbar-toggler {
+  outline: none;
+}
+.ftco-nav .top-menu .language-bar li span.language-img {
+  display:block; 
+  line-height: 18px;
+  padding-right: .5rem;
+}
+.ftco-nav .top-menu .language-bar li span.line {
+   display:block; 
+  line-height: 21px;
+}
+   
+.ftco-nav .top-menu .language-bar li.active a {
+  color:#fff;
+
+}
+.ftco-nav .top-menu .language-bar li a{
+  font-size: 14px;
+  color:rgb(255 255 255 / 48%);
+  padding-right: 5px;
+  padding-left: 5px;
+}
+.ftco-nav .top-menu .navbar-light .navbar-toggler-icon {
+    background-color: #fff;
+    border-radius: 30px;
+    background-size: 20px;
+    width:40px;
+    height:40px;
+}
+
 
 .ftco-nav #ftco-logo {
   margin: 0;
@@ -738,11 +827,15 @@ h4 {
 .ftco-nav ul li>a {
   font-size: 18px;
   letter-spacing: 0;
-  padding: 30px 15px;
+  /*padding: 30px 15px;*/
+  padding: 0px 15px;
   color: rgba(255, 255, 255);
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
+}
+.ftco-nav .navbar-expand-lg .navbar-nav.menus .nav-link {
+    padding-left: 1.6rem;
 }
 
 .ftco-nav ul li>a:hover,
