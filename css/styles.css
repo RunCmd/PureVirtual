@@ -1,6 +1,5 @@
 
 
-
 /* font Face 100-Light, 200-Regular, 300-Medium */
  /* 100 - Light */
 @font-face{
@@ -62,7 +61,7 @@ body {
 }
 
 p {
-  font-size: 22px;
+  font-size: 18px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
@@ -161,13 +160,13 @@ header.video-on .overlay {
   height: 100vh;
   width: 100%;
   background-color: black;
-  opacity: 0.5;
+  opacity: 0.4;
   z-index: 1;
 }
 
 @media (pointer: coarse) and (hover: none) {
   header.video-on {
-    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+    background: url('./images/hero_1.jpg') black no-repeat center center scroll;
   }
   header.video-on video {
     display: none;
@@ -382,7 +381,6 @@ z-index: 999999999999;
   right: -20px;
   transition: 0.3s;
   color:#fff;
-
 }
 
 .btn:hover{
@@ -419,7 +417,7 @@ width: 100%;
 }
 
 
-@media screen and (min-width:1200px) {
+@media screen and (min-width:990px) {
   .center-me-top-white,
   .center-me-top-black {
     position: absolute;
@@ -508,22 +506,6 @@ h1 {
   h1 {
     font-size: 46px;
   }
-
-
-    header.video-on {
-    /* height: calc(100vh - 100px); */
-    height: 800px;
-    }
-
-    header.video-on video {
-    /* height: calc(100vh - 100px); */
-        height: 800px;
-    }
-
-    header.video-on .overlay {{
-      /* height: calc(100vh - 100px); */
-          height: 800px;
-    }
 }
 
 
@@ -892,7 +874,7 @@ h4 {
 
 @media screen and (max-width: 992px) {
   .ftco-nav .top-menu .navbar-collapse{
-    background-color: #182B39;
+    background-color: rgb(0 0 0 / 81%);
     padding: 20px;
   }
   .ftco-nav ul.language-bar {
@@ -1194,9 +1176,11 @@ h4 {
 /* My Sections  */
 
 .line-before {
-  border-left: 5px solid #000000;
+  border-left: 5px solid #182B39;
   padding-left: 5px;
-  line-height: 20px;
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 40px;
 }
 
 .section2 {
@@ -1204,7 +1188,7 @@ h4 {
 }
 
 .section2 .p-bottom {
-  max-width: 327px;
+  max-width: 50%;
 }
 
 .section2-flex-between {
@@ -1218,15 +1202,15 @@ h4 {
 .sectionthree-flex-between {
   display: flex;
   flex-direction: column;
-  padding-top: 75px;
+  padding-top: 5%;
   justify-content: space-between;
   height: 100%;
 }
 .sections-flex-between {
     display: flex;
   flex-direction: column;
-  padding-top: 10%;
-  padding-bottom: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
   justify-content: space-between;
   height: 100%;
 }
@@ -1314,7 +1298,7 @@ font-weight: 100;
 }
 
 .sectionfour-heading {
-  padding-top: 80px;
+  padding-top: 5%;
   padding-bottom: 220px;
 }
 
@@ -1344,8 +1328,8 @@ font-weight: 100;
 }
 
 .text-bottom {
-  max-width: 260px;
-  margin-top: 40%;
+  max-width: 50%;
+  margin-top: 50%;
 }
 
 .section6-links {
@@ -1359,14 +1343,46 @@ font-weight: 100;
 
 .section6-list li {
   border-top: 1px solid lightgray;
-  padding-top: 20px;
-  padding-bottom: 20px;
 }
 
 .section6-list li a {
   color: #000000;
-  font-weight: bold;
+  padding: 30px 0;
+  font-size:20px;
+  width: 100%;
 }
+
+
+
+.section6-list li a{
+   transition: all 0.3s;
+   display: inline-block;
+   position: relative;
+}
+
+.section6-list li a:after {
+  content: '→';
+  position: absolute;
+  opacity: 0;
+  right: -20px;
+  transition: 0.3s;
+  color:#95A5A5;
+}
+
+.section6-list li a:hover{
+  transition: all 0.3s;
+  color:#95A5A5;
+  text-decoration: none;
+}
+
+.section6-list li a:hover:after {
+  opacity: 1;
+  right: 30px;
+}
+
+
+
+
 
 .section6-list .last-link {
   border-bottom: 1px solid lightgray;
@@ -1436,5 +1452,23 @@ font-weight: 100;
 @media screen and (min-width: 1200px) {
   .diagram-padding {
     padding: 30% 10%;
+  }
+}
+@media screen and (max-width: 990px) {
+  .section2-flex-between{
+    min-height: auto;
+  }
+  .default-section-container a{
+    margin-top:40px;
+  }
+  .section2 .p-bottom{
+    max-width: 100%;
+  }
+  .sectionfour-heading{
+    padding-bottom:10px;
+  }
+  .text-bottom{
+    max-width: 100%;
+    margin-top:30%;
   }
 }
