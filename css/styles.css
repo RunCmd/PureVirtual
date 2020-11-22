@@ -101,9 +101,28 @@ h4 {
     content: '';
 }
 
-
-
  */
+
+ .slider-text-inner p{
+   margin-top:40px;
+ }
+
+
+.nav-link:after {
+  display:block;
+  content: '';
+  border-bottom: solid 2px #95A5A5;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+.nav-link:hover:after { transform: scaleX(1); }
+
+
+/* .nav-link:hover{
+  color: #95A5A5 !important;
+  transition:0.3s all ease-in-out;
+  text-decoration:underline;
+} */
 
 /* VIDEO NEW LIMUN*/
 header.video-on {
@@ -223,7 +242,7 @@ header.video-on .overlay {
     margin: 0 auto;
     width: 10px;
     top:0;
-    animation: elasticus 1.2s cubic-bezier(1, 0, 0, 1) infinite;
+
     animation-direction: reverse;
     height: 100%
 }
@@ -231,13 +250,12 @@ header.video-on .overlay {
     z-index: 999999999999;
     content: '';
     display: block;
-    margin: 0;
+    margin-left: -2px;
     padding: 0;
-    width: 8px;
-    height: 8px;
+    width: 15px;
+    height: 15px;
     border-top: 2px solid #000000;
     border-right: 2px solid #000000;
-    behavior: url(-ms-transform.htc);
     -moz-transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
@@ -252,7 +270,7 @@ header.video-on .overlay {
 #scroll-down::before {
 
 z-index: 999999999999;
-    animation: elasticus 1.2s cubic-bezier(1, 0, 0, 1) infinite;
+    animation: elasticus 1s cubic-bezier(1, 0, 0, 1) infinite;
     animation-direction: reverse;
     /* IE 10+, Fx 29+ */
 
@@ -428,8 +446,8 @@ width: 100%;
   .top-arrow-line::after {
     content: "";
     position: absolute;
-    top: 9px;
-    height: 3px;
+    top: 10px;
+    height: 2px;
     width: 15px;
     background-color: #fff;
     transform: rotate(45deg);
@@ -803,17 +821,18 @@ h4 {
 }
 .ftco-nav .top-menu .navbar-light .navbar-toggler {
   outline: none;
+  border:none !important;
 }
 .ftco-nav .top-menu .language-bar li span.language-img {
-  display:block; 
+  display:block;
   line-height: 18px;
   padding-right: .5rem;
 }
 .ftco-nav .top-menu .language-bar li span.line {
-   display:block; 
+   display:block;
   line-height: 21px;
 }
-   
+
 .ftco-nav .top-menu .language-bar li.active a {
   color:#fff;
 
@@ -828,8 +847,8 @@ h4 {
     background-color: #fff;
     border-radius: 30px;
     background-size: 20px;
-    width:40px;
-    height:40px;
+    width:50px;
+    height:50px;
 }
 
 
@@ -857,7 +876,7 @@ h4 {
 
 @media screen and (max-width: 992px) {
   .ftco-nav .top-menu .navbar-collapse{
-    background-color: rgb(0 0 0 / 81%);
+    background-color: #182B39;
     padding: 20px;
   }
   .ftco-nav ul.language-bar {

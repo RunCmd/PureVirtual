@@ -5,7 +5,7 @@
 	var defaultFunctions = function (){
 		var count = 0;
 		  function run() {
-	    	
+
 	        jQuery('.progress_bar').animate({'width': "300px"}, 10000, run).width(0);
 	    }
 		$(document).ready(function(){
@@ -18,7 +18,7 @@
             });
 		});
 
-		//Swipe and Carousel 
+		//Swipe and Carousel
 		$(".carousel").swipe({
 
         swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
@@ -279,6 +279,10 @@
 				 setTimeout(function(){
 					 document.getElementById("scroll-down").style.display = "none";
 					 $(".canvasing").hide();
+				 }, 2000);
+
+				 setTimeout(function(){
+					 document.getElementById("scroll-down").style.display = "none";
 				 }, 1000);
 	};
 
