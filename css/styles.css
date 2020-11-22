@@ -184,7 +184,7 @@ header.video-on .overlay {
   position: fixed;
   left: 0;
   z-index: 99999;
-  background-color: #95A5A5;
+  background-color: #182B39;
   content: '';
 
     transition: 1s all ease-out;
@@ -198,7 +198,7 @@ header.video-on .overlay {
   position: fixed;
   left: 50vw;
   z-index: 99999;
-  background-color: #95A5A5;
+  background-color: #182B39;
   content: '';
 
     transition: 1s all ease-out;
@@ -235,7 +235,7 @@ header.video-on .overlay {
   margin: 0 auto;
   text-align: center;
   z-index: 999999999999;
-  left: 50%;
+  left: 49.7%;
 }
 .arrow-down {
   z-index: 999999999999;
@@ -255,8 +255,8 @@ header.video-on .overlay {
     padding: 0;
     width: 15px;
     height: 15px;
-    border-top: 2px solid #000000;
-    border-right: 2px solid #000000;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
     -moz-transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
@@ -280,7 +280,7 @@ z-index: 999999999999;
     margin-left: -1px;
     width: 2px;
     height: 98vh;
-    background: #000;
+    background: #fff;
     content: ' ';
 }
 
