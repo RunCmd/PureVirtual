@@ -272,7 +272,7 @@
 
 //        move();
          setTimeout(function(){
-          					document.getElementById("canvasing-left").style.transform = "translateX(-101%)";
+          					document.getElementById("canvasing-left").style.transform = "translateX(-100%)";
 										document.getElementById("canvasing-right").style.transform = "translateX(100%)";
          }, 1000);
 

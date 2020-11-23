@@ -180,7 +180,7 @@ header.video-on .overlay {
   /* these are the 2 half blocks which cover the content once the animation is triggered */
   height: 100vh;
   top:0;
-  width: 50vw;
+  width: 50%;
   position: fixed;
   left: 0;
   z-index: 99999;
@@ -194,9 +194,9 @@ header.video-on .overlay {
   /* these are the 2 half blocks which cover the content once the animation is triggered */
   height: 100vh;
   top:0;
-  width: 50vw;
+  width: 50%;
   position: fixed;
-  left: 50vw;
+  left: 50%;
   z-index: 99999;
   background-color: #182B39;
   content: '';
@@ -235,7 +235,8 @@ header.video-on .overlay {
   margin: 0 auto;
   text-align: center;
   z-index: 999999999999;
-  left: 49.7%;
+  left: 50%;
+  right: 50%;
 }
 .arrow-down {
   z-index: 999999999999;
@@ -248,20 +249,22 @@ header.video-on .overlay {
     height: 100%
 }
 .arrow-down:after {
-    z-index: 999999999999;
-    content: '';
-    display: block;
-    margin-left: -2px;
-    padding: 0;
-    width: 15px;
-    height: 15px;
-    border-top: 2px solid #fff;
-    border-right: 2px solid #fff;
-    -moz-transform: rotate(-45deg);
-    -webkit-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    transform: rotate(-45deg);
+  z-index: 999999999999;
+  content: '';
+  display: block;
+  margin-left: -7px;
+  padding: 0;
+  margin-top: -2px;
+  top: -5px;
+  width: 15px;
+  height: 15px;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  -moz-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 
 
@@ -269,19 +272,39 @@ header.video-on .overlay {
 
 
 #scroll-down::before {
-
 z-index: 999999999999;
-    animation: elasticus 1s cubic-bezier(1, 0, 0, 1) infinite;
+    animation: elasticus 1s ease-in-out;
+    animation-fill-mode:forwards;
     animation-direction: reverse;
+    animation-iteration-count: 1;
     /* IE 10+, Fx 29+ */
 
     position: absolute;
     left: 50%;
-    margin-left: -1px;
+    margin-top:-2px;
     width: 2px;
     height: 98vh;
     background: #fff;
     content: ' ';
+}
+
+@keyframes progressBar {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 100%;
+  }
+}
+@keyframes grow
+{
+from {
+    height: 0px;
+    bottom:0;
+}
+to{
+    height: 98vh;
+}
 }
 
 @keyframes elasticus {
@@ -427,6 +450,7 @@ width: 100%;
     height: 100%;
     top: 0;
     left: 50%;
+    right: 50%;
     background-color: #fff;
     z-index: 999;
   }
