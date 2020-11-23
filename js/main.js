@@ -405,6 +405,7 @@
 		testimonialCarousel();
 		fullHeight();
 		defaultFunctions();
+		 AOS.init();
 	});
 
 
