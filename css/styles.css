@@ -1268,8 +1268,10 @@ h4 {
 
 .div-section3 {
   background-color: rgb(255 255 255 / 20%);
-  margin: 0;
-  padding: 5% 10%;
+  flex-direction: column;
+  display: flex;
+  padding: 5% 5%;
+  width: 100%;
 }
 
 .headling-three {
