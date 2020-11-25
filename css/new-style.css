@@ -16,17 +16,17 @@
     background-color: #000;
 }
 
-.p-bigger {
+/* .p-bigger {
     font-size: 22px;
-}
+} */
 
-.h2-smaller {
+/* .h2-smaller {
     font-size: 54px;
 }
 
 .h3-bigger {
     font-size: 46px;
-}
+} */
 
 .section2-pages {
     padding-top: 100px;
@@ -155,4 +155,15 @@
     background-image: url(../images/pv-map.svg);
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.sectionthree-flex-between.box-height {
+    justify-content: flex-end;
+    height: 70vh;
+}
+
+.perfect-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
