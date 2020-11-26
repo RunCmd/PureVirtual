@@ -16,17 +16,9 @@
     background-color: #000;
 }
 
-/* .p-bigger {
-    font-size: 22px;
-} */
-
-/* .h2-smaller {
-    font-size: 54px;
+.min-full-height {
+    min-height: 100%;
 }
-
-.h3-bigger {
-    font-size: 46px;
-} */
 
 .section2-pages {
     padding-top: 100px;
@@ -166,4 +158,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.negative-margin-y {
+    margin: 0 -3rem;
 }
