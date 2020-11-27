@@ -1308,6 +1308,8 @@ h5.ftco-counter {
     counter-increment: gallery-cell;
     background-color: rgb(204 210 210 / 47%);
     padding: 5%;
+    min-height: 500px;
+    min-width: 50%;
 }
 .product-carousel .carousel-cell hr {
   margin-bottom: 2rem;
@@ -1318,11 +1320,12 @@ h5.ftco-counter {
 }
 
 .product-carousel .carousel-cell .numbering-cart {
-font-size: calc(0.6em + 3.2vw);
+font-size: calc(0.6em + 2.2vw);
  padding-bottom: 25px;
  display:block;
 font-family: "Matter", sans-serif;
-font-weight: 100;
+font-weight: 200;
+text-align: left;
 
 }
 .flickity-page-dots {
@@ -1547,6 +1550,9 @@ margin-bottom: 30%;
   .sections-flex-between{
     padding-top:10%;
     padding-bottom:10%;
+  }
+  .product-carousel .carousel-cell{
+    width: 100%;
   }
 }
 
