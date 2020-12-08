@@ -427,3 +427,11 @@
     position: absolute;
     width: 100%;
 }
+
+@media screen and (min-width: 990px){
+.top-arrow-line-cs::before, .top-arrow-line-cs::after {
+
+    left: 50vw;
+
+}
+}
