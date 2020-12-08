@@ -449,6 +449,7 @@ to{
 }
 
 
+
 .the-container {
   padding: 0;
   width: 100%;
@@ -530,6 +531,15 @@ textarea.form-control {
     background-color: #fff;
     z-index: 999;
   }
+
+
+
+  .animated-fast {
+    -webkit-animation-duration: .2s;
+    animation-duration: .2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
 
   .center-me-top-white-start {
     top: 8px;
@@ -1082,6 +1092,8 @@ h4 {
 }
 .ftco-nav .navbar-expand-lg .navbar-nav.menus .nav-link {
     padding-left: 1.6rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
 }
 
 .ftco-nav ul li>a:hover,
@@ -1093,6 +1105,13 @@ h4 {
 .ftco-nav ul li.has-dropdown {
   position: relative;
 }
+.has-dropdown a{
+
+}
+
+.navbar-expand-lg .navbar-nav .nav-link{
+  padding-right:0;
+}
 
 .ftco-nav ul li.has-dropdown .dropdown {
   width: max-content;
@@ -1103,7 +1122,6 @@ h4 {
   visibility: hidden;
   opacity: 0;
   position: absolute;
-  top: 30px;
   left: 0;
   text-align: left;
   background: #fff;
@@ -1170,10 +1188,7 @@ h4 {
   text-decoration: none;
 }
 
-.ftco-nav ul li.has-dropdown:hover a,
-.ftco-nav ul li.has-dropdown:focus a {
-  color: #fff;
-}
+
 
 .ftco-nav ul li.btn-cta a {
   padding: 30px 0px !important;
@@ -1818,3 +1833,115 @@ html {
   display: flex;
 justify-content: space-between;
 }
+
+/* Cookies */
+.cookiealert-container{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.cookiealert-container p{
+  font-size: 16px;
+line-height: 1.4;
+}
+
+.cookiealert {
+  position: fixed;
+  bottom: 0;
+  right: 20px;
+  text-align: left !important;
+  bottom: 20px;
+  width: 20%;
+  margin: 0 !important;
+  z-index: 99999;
+  opacity: 0;
+  padding: 20px !important;
+  visibility: hidden;
+  border-radius: 1px;
+  transform: translateY(100%);
+  transition: all 500ms ease-out;
+  color: #000000;
+  background: #ffffff;
+}
+
+.cookiealert.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0%);
+    transition-delay: 1000ms;
+}
+
+.cookiealert a {
+
+}
+
+.cookiealert .acceptcookies {
+
+}
+
+.pv-link{
+  color:#000;
+  text-decoration: underline;
+  transition: all 0.3s ease-out;
+}
+
+.pv-link:hover{
+  color:#95A5A5;
+  transition: all 0.3s ease-out;
+}
+
+
+@media screen and (max-width:1440px) {
+.cookiealert{width: 30%;}
+}
+
+@media screen and (max-width:990px) {
+.cookiealert{width: 100%;bottom:0;right:0;}
+}
+
+/* BTN Cookies */
+
+
+
+.btn-cookies{
+   transition: all 0.3s;
+   display: inline-block;
+   position: relative;
+   min-width: 140px;
+   background-color: #eaeaea;
+   padding: 15px 30px;
+   border-radius: 50px;
+   text-align: center;
+   border:none;
+}
+
+.btn-cookies:focus{
+  border:none;
+  outline:none;
+}
+
+.btn-cookies:after {
+  content: '→';
+  position: absolute;
+  opacity: 0;
+  right: -10px;
+  transition: 0.3s;
+  color:#fff;
+}
+
+.btn-cookies:hover{
+  padding-left:20px;
+  padding-right:40px;
+  background-color: #182B39 !important;
+  transition: all 0.3s;
+  color:#fff !important;
+}
+
+.btn-cookies:hover:after {
+  opacity: 1;
+  right: 30px;
+}
+
+
+/* /BTN-cookies */
