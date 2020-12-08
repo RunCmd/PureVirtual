@@ -145,13 +145,6 @@
 }
 
 
-.line-before {
-    border-left: 5px solid #182B39;
-    padding-left: 5px;
-    font-size: 22px;
-    line-height: 1.4;
-    margin-bottom: 20px;
-}
 
 .max-width-header {
     max-width: 80%;
@@ -368,7 +361,7 @@
   height: 100%;
 }
 
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 670px) {
 .list-box{
   display: block;
 }

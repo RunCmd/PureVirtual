@@ -399,7 +399,6 @@ to{
   width: 100%;
   height: 1px;
   background-color: #000;
-
 }
 
 .num-line-animate{
@@ -1040,9 +1039,21 @@ h4 {
 }
 
 @media screen and (max-width: 992px) {
+  .phylosophy{display: none;}
+
   .ftco-nav .top-menu .navbar-collapse{
-    background-color: rgb(0 0 0 / 81%);
+    background-color: #000;
     padding: 20px;
+    border-radius:1px;
+  }
+
+  .ftco-nav .top-menu .navbar-collapse-white{
+    background-color: #fff !important;
+    padding: 20px;
+  }
+  .nav-link:after{
+    display: none;
+    border-radius:1px;
   }
   .ftco-nav ul.language-bar {
         display: flex;
@@ -1357,7 +1368,9 @@ h4 {
   background: rgba(0, 0, 0, 0.05);
 }
 
-
+.navbar-brand{
+  width: 200px;
+}
 /*  Navigation Baner with Video */
 
 
@@ -1375,6 +1388,7 @@ h4 {
   margin-bottom: 40px;
 }
 
+
 .line-before-footer {
   border-left: 5px solid #182B39;
   padding-left: 5px;
@@ -1383,6 +1397,14 @@ h4 {
   margin-bottom: 20px;
 }
 
+.line-before-animate {
+  animation:line-bef 0.5s ease-in-out;
+}
+
+@keyframes line-bef{
+  from{border-left: 0px solid #182B39;}
+  to{border-left: 5px solid #182B39;}
+}
 
 .section2 {
   position: relative;
