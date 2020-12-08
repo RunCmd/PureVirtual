@@ -362,9 +362,9 @@
 }
 
 @media screen and (max-width: 670px) {
-.list-box{
+/* .list-box{
   display: block;
-}
+} */
 }
 @media screen and (max-width: 990px) {
 
@@ -395,4 +395,35 @@
 .full-height{
   min-height: 90vw;
 }
+}
+
+
+.coming-soon{
+  height: 100vh;
+  width: 100%;
+}
+
+.row-mow{
+  width: 100vw;
+  height: 50vh;
+  background-color: var(--blue);
+  display: block;
+  bottom: 0;
+    position: absolute;
+}
+
+.row-mow-2{
+  width: 100vw;
+  height: 25vh;
+  background-color: var(--cascade);
+  display: block;
+  bottom: 50vh;
+  position: absolute;
+}
+
+.cs-gass{
+  color: #fff;
+    bottom: 5% !important;
+    position: absolute;
+    width: 100%;
 }

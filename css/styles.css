@@ -1397,15 +1397,6 @@ h4 {
   margin-bottom: 20px;
 }
 
-.line-before-animate {
-  animation:line-bef 0.5s ease-in-out;
-}
-
-@keyframes line-bef{
-  from{border-left: 0px solid #182B39;}
-  to{border-left: 5px solid #182B39;}
-}
-
 .section2 {
   position: relative;
 }
