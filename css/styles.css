@@ -1517,7 +1517,7 @@ text-align: left;
 }
 
 .section5 {
-  min-width: 400px;
+  min-width:100%;
   background-color: #000000;
   color: #ffffff;
   position: relative;
