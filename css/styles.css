@@ -493,8 +493,7 @@ textarea.form-control {
 .form-control:focus {
     color: #95A5A5;
     background-color: #fff;
-    border-color: #95A5A5;
-    border: 1px solid;
+    border: 1px solid #95A5A5;
     outline: 0;
     box-shadow: 0 0 20px 0rem rgb(24 43 57 / 22%);
 }
