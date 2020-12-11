@@ -6,9 +6,9 @@
   font-family: "Matter";
   src:url("../fonts/matter/Matter-Light.eot");
   src:url("../fonts/matter/Matter-Light.eot?#iefix") format('embedded-opentype'),
-      url("../fonts/matter/Matter-Light.woff2") format('woff2'),
-      url("../fonts/matter/Matter-Light.woff") format('woff'),
       url("../fonts/matter/Matter-Light.ttf") format('truetype'), /* Safari, Android, iOS */
+      url("../fonts/matter/Matter-Light.woff") format('woff'),
+      url("../fonts/matter/Matter-Light.woff2") format('woff2'),
       url("../fonts/matter/Matter-Light.svg#Matter") format('svg');  /* Legacy iOS */
   font-weight:100;
   font-style:normal;
@@ -17,13 +17,13 @@
 
 /* 200 - Regular */
 @font-face{
- font-family: "Matter";
- src:url("../fonts/matter/Matter-Regular.eot");
- src:url("../fonts/matter/Matter-Regular.eot?#iefix") format('embedded-opentype'),
-     url("../fonts/matter/Matter-Regular.woff2") format('woff2'),
-     url("../fonts/matter/Matter-Regular.woff") format('woff'),
-     url("../fonts/matter/Matter-Regular.ttf") format('truetype'), /* Safari, Android, iOS */
-     url("../fonts/matter/Matter-Regular.svg#Matter") format('svg');  /* Legacy iOS */
+  font-family: "Matter";
+  src:url("../fonts/matter/Matter-Regular.eot");
+  src:url("../fonts/matter/Matter-Regular.eot?#iefix") format('embedded-opentype'),
+      url("../fonts/matter/Matter-Regular.ttf") format('truetype'), /* Safari, Android, iOS */
+      url("../fonts/matter/Matter-Regular.woff") format('woff'),
+      url("../fonts/matter/Matter-Regular.woff2") format('woff2'),
+      url("../fonts/matter/Matter-Regular.svg#Matter") format('svg');  /* Legacy iOS */
  font-weight:200;
  font-style:normal;
 }
@@ -31,12 +31,12 @@
 /* 300 - Medium */
 @font-face{
  font-family: "Matter";
- src:url("../fonts/matter/Matter-Medium.eot");
- src:url("../fonts/matter/Matter-Medium.eot?#iefix") format('embedded-opentype'),
-     url("../fonts/matter/Matter-Medium.woff2") format('woff2'),
-     url("../fonts/matter/Matter-Medium.woff") format('woff'),
-     url("../fonts/matter/Matter-Medium.ttf") format('truetype'), /* Safari, Android, iOS */
-     url("../fonts/matter/Matter-Medium.svg#Matter") format('svg');  /* Legacy iOS */
+  src:url("../fonts/matter/Matter-Medium.eot");
+  src:url("../fonts/matter/Matter-Medium.eot?#iefix") format('embedded-opentype'),
+      url("../fonts/matter/Matter-Medium.ttf") format('truetype'), /* Safari, Android, iOS */
+      url("../fonts/matter/Matter-Medium.woff") format('woff'),
+      url("../fonts/matter/Matter-Medium.woff2") format('woff2'),
+      url("../fonts/matter/Matter-Medium.svg#Matter") format('svg');  /* Legacy iOS */
  font-weight:300;
  font-style:normal;
 }
@@ -117,7 +117,9 @@ h4 {
    margin-top:40px;
  }
 
-
+.home-pr{
+  color: #fff;
+}
 .nav-link:after {
   display:block;
   content: '';
@@ -1012,7 +1014,6 @@ h4 {
   padding: 0;
   font-weight: bold;
   font-size: 40px;
-  font-weight: 700;
   font-family: "Matter", sans-serif;
 }
 
@@ -1575,15 +1576,11 @@ text-align: left;
   padding: 30px 0;
   font-size:20px;
   width: 100%;
+  transition: all 0.3s;
+  display: inline-block;
+  position: relative;
 }
 
-
-
-.section6-list li a{
-   transition: all 0.3s;
-   display: inline-block;
-   position: relative;
-}
 
 .section6-list li a:after {
   content: '→';
@@ -1855,7 +1852,6 @@ line-height: 1.4;
 
 .cookiealert {
   position: fixed;
-  bottom: 0;
   right: 20px;
   text-align: left !important;
   bottom: 20px;
