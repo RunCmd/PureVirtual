@@ -1,14 +1,13 @@
-
-
 /* font Face 100-Light, 200-Regular, 300-Medium */
  /* 100 - Light */
+
 @font-face{
   font-family: "Matter";
   src:url("../fonts/matter/Matter-Light.eot");
   src:url("../fonts/matter/Matter-Light.eot?#iefix") format('embedded-opentype'),
-      url("../fonts/matter/Matter-Light.ttf") format('truetype'), /* Safari, Android, iOS */
-      url("../fonts/matter/Matter-Light.woff") format('woff'),
       url("../fonts/matter/Matter-Light.woff2") format('woff2'),
+      url("../fonts/matter/Matter-Light.woff") format('woff'),
+      url("../fonts/matter/Matter-Light.ttf") format('truetype'), /* Safari, Android, iOS */
       url("../fonts/matter/Matter-Light.svg#Matter") format('svg');  /* Legacy iOS */
   font-weight:100;
   font-style:normal;
@@ -20,9 +19,9 @@
   font-family: "Matter";
   src:url("../fonts/matter/Matter-Regular.eot");
   src:url("../fonts/matter/Matter-Regular.eot?#iefix") format('embedded-opentype'),
-      url("../fonts/matter/Matter-Regular.ttf") format('truetype'), /* Safari, Android, iOS */
-      url("../fonts/matter/Matter-Regular.woff") format('woff'),
       url("../fonts/matter/Matter-Regular.woff2") format('woff2'),
+      url("../fonts/matter/Matter-Regular.woff") format('woff'),
+      url("../fonts/matter/Matter-Regular.ttf") format('truetype'), /* Safari, Android, iOS */
       url("../fonts/matter/Matter-Regular.svg#Matter") format('svg');  /* Legacy iOS */
  font-weight:200;
  font-style:normal;
@@ -33,9 +32,9 @@
  font-family: "Matter";
   src:url("../fonts/matter/Matter-Medium.eot");
   src:url("../fonts/matter/Matter-Medium.eot?#iefix") format('embedded-opentype'),
-      url("../fonts/matter/Matter-Medium.ttf") format('truetype'), /* Safari, Android, iOS */
-      url("../fonts/matter/Matter-Medium.woff") format('woff'),
       url("../fonts/matter/Matter-Medium.woff2") format('woff2'),
+      url("../fonts/matter/Matter-Medium.woff") format('woff'),
+      url("../fonts/matter/Matter-Medium.ttf") format('truetype'), /* Safari, Android, iOS */
       url("../fonts/matter/Matter-Medium.svg#Matter") format('svg');  /* Legacy iOS */
  font-weight:300;
  font-style:normal;

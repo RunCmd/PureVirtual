@@ -36,7 +36,7 @@
     <!-- <link rel="stylesheet" href="css/icomoon.css"> -->
     <!-- Bootstrap  -->
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap-min.css">
 
      <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css"/>
 
@@ -254,7 +254,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 fadeInUp animated-fast animate-box" data-animate-effect="fadeIn">
+            <div class="col-lg-6">
                 <div class="section-container">
                     <div class="section2-right section2-flex-between">
                         <div class="default-section-container mt-0 pt-0">
@@ -379,7 +379,7 @@
                         <div class="default-section-container">
                             <p class="line-before">Invisible but irreplaceable.</p>
                         </div>
-                        <div class="diagram-padding" data-aos="fade-up" data-aos-delay="200">
+                        <div class="diagram-padding animate-box">
                             <img loading="lazy" src="images/pv-home-diagram.svg" alt="home diagram" class="img-fluid" width="100%">
                         </div>
                       <!--   <div class="default-section-container">
@@ -536,7 +536,7 @@
       <div class="col-lg-6 p-0">
       <div class="sections-flex-between">
           <div class="default-section-container text-center">
-            <div class="section7-text animate-box fadeInUp animated-fast">
+            <div class="section7-text">
               <h4 data-aos="fade-up" data-aos-delay="0"> Schedule free initial consultation </h4>
               <h2 data-aos="fade-up" data-aos-delay="50" class="section7-heading"> Arrange your non-binding, free initail consultation now. </h2>
               <div  data-aos="fade-up" data-aos-delay="100"><a href="./pages/contact.html" class="btn btn-white-more m-auto">Schedule consultation</a></div>
@@ -646,7 +646,10 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script src="js/aos-animate.js"></script>
 <script>
-  AOS.init();
+  AOS.init({
+      once: true,
+      duration: 750
+  })
 </script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
  <!-- JavaScript Flickity-->
