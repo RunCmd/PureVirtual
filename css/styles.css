@@ -172,6 +172,7 @@ header.video-on .overlay {
 @media (pointer: coarse) and (hover: none) {
   header.video-on {
     background: url('../images/hero_1.jpg') no-repeat center center scroll;
+    background-size:cover;
   }
   header.video-on video {
     display: none;
