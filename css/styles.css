@@ -891,6 +891,9 @@ h4 {
   transition: 0.5s;
 }
 
+.section5-img img{width: 100%;}
+.section7-image img{width: 100%;}
+
 @media screen and (max-width: 992px) {
   /* #ftco-offcanvas {
     display: block;
