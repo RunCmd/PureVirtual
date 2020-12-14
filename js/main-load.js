@@ -2,8 +2,8 @@ $(document).ready(function(event){
   var isAnimating = false,
     newLocation = '';
     firstLoad = false;
-  
-  //trigger smooth transition from the actual page to the new one 
+
+  //trigger smooth transition from the actual page to the new one
   $('main').on('click', '[data-type="page-transition"]', function(event){
     event.preventDefault();
     //detect which page has been selected
@@ -18,10 +18,10 @@ $(document).ready(function(event){
   	if( firstLoad ) {
       /*
       Safari emits a popstate event on page load - check if firstLoad is true before animating
-      if it's false - the page has just been loaded 
+      if it's false - the page has just been loaded
       */
       var newPageArray = location.pathname.split('/'),
-        //this is the url of the page to be loaded 
+        //this is the url of the page to be loaded
         newPage = newPageArray[newPageArray.length - 1];
 
       if( !isAnimating  &&  newLocation != newPage ) changePage(newPage, false);
@@ -49,7 +49,7 @@ $(document).ready(function(event){
 		url = ('' == url) ? 'index.html' : url;
   	var newSection = 'cd-'+url.replace('.html', '');
   	var section = $('<div class="cd-main-content '+newSection+'"></div>');
-  		
+
   	section.load(url+' .cd-main-content > *', function(event){
       // load new content and replace <main> content with the new one
       $('main').html(section);
@@ -66,7 +66,7 @@ $(document).ready(function(event){
 
         if( !transitionsSupported() ) isAnimating = false;
       }, delay);
-      
+
       if(url!=window.location && bool){
         //add the new page to the window.history
         //if the new page was triggered by a 'popstate' event, don't add it
