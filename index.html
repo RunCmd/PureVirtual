@@ -6,12 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Purevirtual - IT Consulting & Infrastructure</title>
     <meta name="description" content="Purevirtual is leading IT partner, serving the German region by providing reliable, secure and result-oriented consulting services.">
-
     <meta property="og:title" content="Purevirtual - IT Consulting & Infrastructure" /> <!-- Same as a <title> -->
-
     <meta property="og:description" content="Purevirtual is leading IT partner, serving the German region by providing reliable, secure and result-oriented consulting services."/> <!-- Same as meta description -->
-    <meta property="og:site_name" content="Purevirtual"/>
 
+    <meta property="og:site_name" content="Purevirtual"/>
     <meta property="og:image" content="images/pv-social.jpg" />
     <meta property="og:image:secure_url" content="images/pv-social.jpg" />
     <meta property="og:image:type" content="image/jpeg" />
@@ -20,32 +18,23 @@
     <meta name="twitter:image" content="./images/pv-social.jpg" />
     <meta name="twitter:url" content="www.purevirtual.com" />
     <meta name="twitter:card" content="summary_large_image">
-
-    <!-- FAVICON -->
-    <link rel="icon" type="image/svg+xml" href="images/pv-fav.svg">
-    <link rel="alternate icon" href="images/pv-fav.ico">
-
     <meta name="theme-color" content="#95A5A5">
     <meta name="robots" content="index, follow">
 
-    <!-- Icomoon Icon Fonts-->
-    <!-- <link rel="stylesheet" href="css/icomoon.css"> -->
-    <!-- Bootstrap  -->
+    <!-- FAVICON -->
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="alternate icon" href="images/favicon.ico">
+    <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#95A5A5">
+
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap-min.css">
     <link rel="stylesheet" href="css/flickity-min.css"/>
-
-    <!-- Magnific Popup -->
-    <!-- <link rel="stylesheet" href="css/magnific-popup.css"> -->
-
     <!-- Owl Carousel  -->
     <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <!-- Flexslider  -->
-    <link rel="stylesheet" href="css/flexslider.css">
-
+    <!-- Aos Animation  -->
     <link rel="stylesheet" href="css/aos.css" />
-    <!-- Web style  -->
+    <!-- Custom Styles -->
     <link href="css/styles.css" rel="stylesheet"/>
     <link href="css/new-style.css" rel="stylesheet"/>
     <!-- Modernizr JS -->
@@ -54,7 +43,7 @@
     <!--[if lt IE 9]>
     <script src="js/respond.min.js"></script>
     <![endif]-->
-    <link rel="stylesheet" href="./css/animate.css">
+    <!-- <link rel="stylesheet" href="css/animate.css"> -->
 
 </head>
 
@@ -97,13 +86,12 @@
           <div class="the-container">
                 <div class="row">
                     <div class="col-12 padding-navi">
-
                          <nav class="navbar navbar-expand-lg navbar-light bg-transparent rounded text-white">
                             <a class="navbar-brand" href="index.html">
                              <img src="./images/purevirtual-logo-white.svg" alt="PURE VIRTUAL LOGO">
                             </a>
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
-                              <span class="navbar-toggler-icon"><!----></span>
+                            <button class="navbar-toggler js-ftco-nav-toggle ftco-nav-toggle ftco-nav-white active" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon"></span>
                             </button>
 
                             <div class="collapse navbar-collapse flex-column" id="navbarsExample09">
@@ -125,11 +113,11 @@
                               </ul>
                                <ul class="navbar-nav ml-auto menus">
                                 <li class="nav-item">
-                                  <a class="nav-link text-white" href="./pages/about-us.html">About us</a>
+                                  <a class="nav-link text-white" href="about-us.html">About us</a>
                                 </li>
                                 <li class="nav-item has-dropdown">
-                                   <a class="nav-link text-white" href="#">IT Consulting</a>
-                                   <ul class="dropdown dropdown-menu" aria-labelledby="navbarDropdown">
+                                   <a class="nav-link text-white" href="#"  data-toggle="collapse" data-target="#dropdown-menu">IT Consulting</a>
+                                   <ul class="dropdown dropdown-menu" aria-labelledby="navbarDropdown" id="dropdown-menu" >
                                        <li><a href="./pages/insolvency-administrators.html">Insolvency Administrators</a></li>
                                        <li><a href="./pages/private-equity-and-investors.html">Private Equity & Investors</a></li>
                                        <li><a href="./pages/interim-management.html">Interim Management</a></li>

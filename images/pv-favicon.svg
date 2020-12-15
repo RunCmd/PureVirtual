@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 350">
+  <defs>
+    <style>
+      .a {
+        fill: #d4dada;
+      }
+
+      .b {
+        fill: #182b39;
+      }
+
+      .c {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <title>pv-favicon</title>
+  <rect class="a" width="350" height="350"/>
+  <rect class="b" y="175" width="350" height="175"/>
+  <rect class="c" x="164.6" y="175" width="21" height="159.62"/>
+  <polygon class="b" points="227 64.9 175 13 123 64.9 137.8 79.7 164.6 53.1 164.6 175 185.6 175 185.6 53.3 212.2 79.7 227 64.9"/>
+</svg>
