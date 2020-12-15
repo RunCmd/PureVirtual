@@ -167,12 +167,13 @@
 
 
 
-.header-underline-grey a{
+.header-underline-grey button{
     font-size: 24px;
-    color: rgba(33, 37, 41, 1);
+        color: rgba(33, 37, 41, 0.5);
+
 }
-.header-underline-grey a.collapsed {
-    color: rgba(33, 37, 41, 0.5);
+.header-underline-grey button.collapsed {
+    color: rgba(33, 37, 41, 1);
 }
 
 .max-width-box {
@@ -439,4 +440,16 @@
   transition: all 0.3s;
   color: #95A5A5;
   text-decoration: none;
+}
+
+.button-office{
+  background: none;
+    border: none;
+    outline: none;
+}
+
+.button-office:focus{
+  background: none;
+    border: none;
+    outline: none;
 }
