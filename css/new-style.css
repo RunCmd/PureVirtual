@@ -248,9 +248,11 @@
 }
 
 .second-list-box {
+  display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     width: 100%;
+    padding-bottom:1em;
 }
 
 .list-box.second-list-box p {
@@ -452,4 +454,12 @@
   background: none;
     border: none;
     outline: none;
+}
+
+.cs-links img{
+  width: 200px;
+}
+
+.case-study-top-height{
+  min-height: 30vh;
 }

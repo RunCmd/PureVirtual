@@ -1139,7 +1139,7 @@ h4 {
   -webkit-transition: 0s;
   -o-transition: 0s;
   transition: 0s;
-  top:40px;
+  top:37px;
 }
 
 .ftco-nav ul li.has-dropdown .dropdown:before {
@@ -1159,7 +1159,7 @@ h4 {
 .ftco-nav ul li.has-dropdown .dropdown li {
   display: block;
   border-bottom: 1px solid #ececec;
-  padding: 5px 50px 5px 30px;
+  padding: 0px 50px 0px 30px;
 }
 
 .ftco-nav ul li.has-dropdown .dropdown li:last-child {
@@ -1168,8 +1168,7 @@ h4 {
 
 .ftco-nav ul li.has-dropdown .dropdown li a {
   display: block;
-
-  padding:15px 0;
+  padding:20px 0;
   text-transform: none;
   letter-spacing: 0;
   color: #000;
