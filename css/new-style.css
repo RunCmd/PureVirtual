@@ -237,10 +237,13 @@
 }
 
 .list-box {
-    border-bottom: 1px solid rgba(112, 112, 112, 0.25);
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.list-box-cs {
+    display: flex;
 }
 
 .border-top-cs {
@@ -320,10 +323,10 @@
 } */
 
 .line-before-big {
-    font-size: 46px;
     padding: 3rem;
-    line-height: 52px;
+
     background-color: rgb(200, 207, 207, 0.3);
+        border-left: 5px solid #182B39;
 }
 
 .office-view{
@@ -363,6 +366,12 @@
 /* .list-box{
   display: block;
 } */
+
+.cs-links{
+  flex-direction: column !important;
+  align-items: baseline;
+}
+
 }
 @media screen and (max-width: 990px) {
 
@@ -462,4 +471,10 @@
 
 .case-study-top-height{
   min-height: 30vh;
+}
+
+.cs-links{
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(112, 112, 112, 0.25);
 }
