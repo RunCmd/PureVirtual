@@ -437,7 +437,7 @@ to{
   padding-right:60px;
   background-color: #182B39;
   transition: all 0.3s;
-  color:#fff;
+  color:#fff !important;
 }
 
 .btn:hover:after {
