@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.4 31.4">
+  <defs>
+    <style>
+      .a {
+        fill: none;
+        stroke: #192b38;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <title>stability</title>
+  <g>
+    <path class="a" d="M22.8,8.3a12.6,12.6,0,0,1,8,11.8,12.7,12.7,0,0,1-25.4,0,12.6,12.6,0,0,1,8-11.8" transform="translate(-4.4 -2.4)"/>
+    <path class="a" d="M16.2,12.3a1.9,1.9,0,0,0,1.9,1.9,2,2,0,0,0,2-2V5.4a2,2,0,0,0-2-2,1.9,1.9,0,0,0-1.9,2v6.8Z" transform="translate(-4.4 -2.4)"/>
+  </g>
+</svg>

@@ -165,15 +165,7 @@
     color: rgba(33, 37, 41, 0.5);
 }
 
-.header-underline a::after {
-    content: '';
-    width: 165px;
-    height: 2px;
-    background-color: #000;
-    position: absolute;
-    left: 0;
-    top: 30px;
-}
+
 
 .header-underline-grey a{
     font-size: 24px;
@@ -301,11 +293,12 @@
     padding-bottom: 90px;
 }
 
-.map-bg-img {
-    background-image: url(../images/pv-map.svg);
+.map-office {
+    background-image: url(../images/map-cologne.svg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size:50% 50%;
+    background-size:70% 70%;
+    transition:all 0.3s ease-in-out;
 }
 
 .sectionthree-flex-between.box-height {
@@ -333,6 +326,8 @@
 .office-view{
   object-fit: cover;
   height: 100%;
+  object-position: 50% 50%;
+  transition:all 0.3s ease-in-out;
 }
 
 .tech-links a{
@@ -434,4 +429,14 @@
     left: 50vw;
 
 }
+}
+
+.collapse a{
+  color: #000;
+}
+
+.collapse a:hover{
+  transition: all 0.3s;
+  color: #95A5A5;
+  text-decoration: none;
 }
