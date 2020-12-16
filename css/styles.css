@@ -483,6 +483,20 @@ textarea.form-control {
 }
 
 @media screen and (max-width:990px) {
+
+.ftco-nav ul li.has-dropdown .dropdown{
+border-radius: 0 !important;
+position: relative !important;
+border: none !important;
+width: 100% !important;
+border-radius: 0 !important;
+top:0 !important;
+}
+
+.ftco-nav ul li.has-dropdown .dropdown:before{
+  display: none !important;
+}
+
   textarea.form-control {
       height: auto;
       min-height: 120px;
@@ -1126,8 +1140,7 @@ h4 {
   -moz-box-shadow: 0px 14px 33px -9px rgba(0, 0, 0, 0.35);
   box-shadow: 0px 14px 33px -9px rgba(0, 0, 0, 0.35);
   z-index: 1002;
-  visibility: hidden;
-  opacity: 0;
+  opacity: 1;
   position: absolute;
   left: 0;
   text-align: left;
