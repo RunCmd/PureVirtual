@@ -360,7 +360,7 @@
 		burgerMenu();
 		contentWayPoint();
 		sliderMain();
-		dropdown();
+		// dropdown();
 		goToTop();
 		counterWayPoint();
 		counter();
