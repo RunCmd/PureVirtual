@@ -369,7 +369,7 @@
 
 .cs-links{
   flex-direction: column !important;
-  align-items: baseline;
+  align-items: baseline !important;
 }
 
 }
@@ -437,10 +437,19 @@
 
 @media screen and (min-width: 990px){
 .top-arrow-line-cs::before, .top-arrow-line-cs::after {
-
     left: 50vw;
-
 }
+}
+
+@media (max-width: 380px){
+
+  .white-paper{
+    height: 350px;
+  }
+  .white-paper img{
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
 .collapse a{
